@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\ProductController;
+
+use App\Http\Controllers\API\HomeProductController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,3 +20,4 @@ use App\Http\Controllers\API\ProductController;
 //     return $request->user();
 // });
 Route::apiResource('products', ProductController::class);
+Route::apiResource('homeproducts', HomeProductController::class);
